@@ -2,10 +2,10 @@ import cv2
 import pytesseract
 
 # Path to Tesseract executable (change this according to your installation)
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/usr/local/bin/tesseract'
 
 # Load the image
-image_path = 'image_roi.jpg'
+image_path = 'image_roi.png'
 image = cv2.imread(image_path)
 
 # Convert the image to grayscale
